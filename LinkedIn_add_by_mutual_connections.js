@@ -1,7 +1,7 @@
 //using Web link:
 //https://www.linkedin.com/mynetwork/
 //**Desktop Site**
-//basic model:
+//My Special model:
 function build_network(){
 var num_mf=parseInt(prompt("Enter the Number of Mutual friends you want in a connection:\n[[0 for Adding everyone]"));
 var check_filter=parseInt(prompt("Enter Filter mode?\n[Yes:1]\n[No:0 or leave empty]\n"));
