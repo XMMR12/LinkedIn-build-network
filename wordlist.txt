@@ -1,0 +1,4 @@
+/*MY OWN WORDLIST*/
+/*for the array*/
+
+network,end,dev,business,web,sec,it,ui,bi,design,future,fue,INTEL,IOT,AI,computer,program,python,software,info,sys,testing,ctf,penetration,javascript,JS,HR
