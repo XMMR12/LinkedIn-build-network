@@ -12,7 +12,7 @@ if (check_filter){
 	var scan_info;
 }
 
-var allbts=document.getElementsByClassName("full-width artdeco-button artdeco-button--2 artdeco-button--full artdeco-button--secondary ember-view");
+var allbts=document.getElementsByClassName("artdeco-button artdeco-button--2 artdeco-button--secondary ember-view full-width");
 
 
 for (var i=0;i<allbts.length-1;i++){
