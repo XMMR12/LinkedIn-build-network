@@ -35,11 +35,8 @@ allbts[i].click();
 }
 
 else if(allbts[i].parentElement.parentElement.children[0].textContent.search("mutual connections")!=-1){
-var mut_cons_raw=allbts[i].parentElement.parentElement.children[0].textContent.replaceAll("\n","").replace("mutual connections","").trim();
-var mut_cons=parseInt(mut_cons_raw);
+var mut_cons=parseInt(allbts[i].parentElement.parentElement.children[0].textContent.replaceAll("\n","").replace("mutual connections","").trim().split(",").join(""));
 if (mut_cons>=num_mf)
-{allbts[i].click();}
-else if (mut_cons_raw.search(",")!=-1)
 {allbts[i].click();}
 }
 }
