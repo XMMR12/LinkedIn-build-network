@@ -14,7 +14,7 @@ if (check_filter){
 
 var allbts=document.getElementsByClassName("artdeco-button artdeco-button--2 artdeco-button--secondary ember-view full-width");
 
-
+var count=0;
 for (var i=0;i<allbts.length-1;i++){
 if (allbts[i].textContent.toLowerCase().search("connect")!=-1)
 {
@@ -31,17 +31,18 @@ for (var i2=0;i2<wordlist_filter.length;i2++){
 	}}
 if (check_filter&&found_wordlist_filter||!check_filter){
 if (num_mf==0){
-allbts[i].click();
+allbts[i].click();count++;
 }
 
 else if(allbts[i].parentElement.parentElement.children[0].textContent.search("mutual connections")!=-1){
 var mut_cons=parseInt(allbts[i].parentElement.parentElement.children[0].textContent.replaceAll("\n","").replace("mutual connections","").trim().split(",").join(""));
 if (mut_cons>=num_mf)
-{allbts[i].click();}
+{allbts[i].click();count++;}
 }
 }
 }
 }
-
+console.log("Mutual connections Added : "+count);
+alert("Mutual connections Added : "+count);
 }
 build_network();
